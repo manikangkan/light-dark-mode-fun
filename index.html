@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <!-- <html lang="en" class="dark"> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>light|darkMode</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>light | dark mode</h1>
+      <div class="toggle-switch">
+        <input type="checkbox" id="btn" />
+        <label for="btn"></label>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+        similique vitae nihil, voluptatibus laboriosam deleniti iure eos
+        excepturi! Asperiores est aliquam dolore labore id hic quas vitae at
+        cumque ab.
+      </p>
+    </div>
+    <script>
+      var checkbox = document.getElementById("btn");
+
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          console.log("Copyright 2021 | Manikangkan Das");
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      });
+    </script>
+  </body>
+</html>
